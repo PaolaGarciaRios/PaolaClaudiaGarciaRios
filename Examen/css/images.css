@@ -1,0 +1,7 @@
+.bg-image{
+    background-image: url(images/1.jpg);
+    background-repeat: no-repeat;
+}
+img{
+    opacity: 0.8;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <title>Index</title>
+</head>
+<body class="bg-image">
+    <nav class="navbar navbar-expand-lg navbar-dark nav">
+        <div class="container">
+            <!-- <a class="navbar-brand" href="#">Brand</a> -->
+            <a href="#"><img src="images/logo3.png" style="height: 70px;"></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"  data-bs-toggle="dropdown">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item text" href="html/features.html">Gastronomia</a></li>
+                            <li><a class="dropdown-item text" href="https://chatwith.io/es/s/que-se-te-ha-antojado">WhatsApp</a></li>
+                            <li><a class="dropdown-item text" href="https://www.facebook.com/GourmetChile/">Facebook</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"  data-bs-toggle="dropdown">
+                          Pricing
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                          <li><a class="dropdown-item text" href="html/pricing.html">Comidas</a></li>
+                          <li><a class="dropdown-item text" href="html/bebidas.html">Bebidas</a></li>
+                          <li><a class="dropdown-item text" href="html/pasteleria.html">Pasteleria</a></li>
+                      </ul>
+                  </li>
+                </ul>
+            </div>
+            <button class="btn btn-outline button" id="txt" type="submit" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>//
+            <button class="btn btn-outline button" id="txt" type="submit" data-bs-toggle="modal" data-bs-target="#regModal">Registro</button>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="loginModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modallog">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body control">
+                    <form>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label lbl">Usuario:</label>
+                            <input type="text" class="form-control " placeholder="Introduzca su Usuario">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label lbl">Contraseña:</label>
+                            <input type="password" class="form-control " placeholder="Introduzca su Contraseña">
+                        </div>
+                    <form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+                    <button type="button" class="btn btn-primary">Iniciar sesion</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="regModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content modalreg">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Registro de clientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body control">
+                    <form>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">Nombres*</label>
+                            <input type="text" required maxlength="20" class="form-control" placeholder="Introduzca sus Nombres">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">Apellidos*</label>
+                            <input type="text" required maxlength="20" class="form-control" placeholder="Introduzca sus Apellidos">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">Contraseña*</label>
+                            <input type="password" required class="form-control" placeholder="Introduzca una contraseña">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">Confirmación deContraseña*</label>
+                            <input type="password" required class="form-control" placeholder="Vuelva a escribir su contraseña">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">Telefono</label>
+                            <input type="number" class="form-control" placeholder="Introduzca su codigo de area mas su telefono">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="col-form-label">Email*</label>
+                            <input type="text" required class="form-control" placeholder="Introduzca un Correo">
+                        </div>
+
+                    <form>
+                </div>
+                <div class="modal-footer my-btn">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+                    <button type="button" class="btn btn-primary">Crear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+      <div id="mySlide" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mySlide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#mySlide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#mySlide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/img1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>FOUR TIMES</h1>
+                <p>bon appétit come saludable no te (ex)pogas.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/img2.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="images/img3.jpg" class="d-block w-100">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mySlide" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mySlide" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <hr>
+      
+</body>
+</html>
+      
